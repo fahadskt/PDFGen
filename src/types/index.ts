@@ -32,6 +32,7 @@ export interface BaseElement {
   };
   style: Record<string, any>;
   zIndex?: number;
+  rotation?: number;
 }
 
 export interface BaseNewElement {
@@ -45,6 +46,7 @@ export interface BaseNewElement {
   };
   style: Record<string, any>;
   zIndex?: number;
+  rotation?: number;
 }
 
 export interface TextElement extends BaseElement {
@@ -65,7 +67,6 @@ export interface ShapeElement extends BaseElement {
   backgroundColor?: string;
   borderColor?: string;
   borderWidth?: number;
-  rotation?: number;
 }
 
 export interface TableElement extends BaseElement {
